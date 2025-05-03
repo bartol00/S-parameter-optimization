@@ -13,6 +13,9 @@ will be matched as closely as possible to the target in both circuit models. The
 accurately using the complex circuit model, with the drawback of a higher time complexity. The decision of which circuit model to use 
 should be made in regards to this information.
 
+The graphs generated for an example circuit are stored in the 'images/' folder, while the example S-parameters for circuits are stored in the 
+'s_param_samples/' folder.
+
 
 
 *The complex circuit model refers to the model pictured in the generated report if the chosen circuit model was complex.
