@@ -1,0 +1,28 @@
+** Capacitor model
+
+.include paramcomplex.txt
+
+Cnom1 in 1 {Cnom}
+Rlfloss1 in 1 {Rlfloss}
+Lmount1 1 2 {Lmount}
+Rhfskin1 2 0 {Rhfskin}
+Lhfskin1 2 3 {Lhfskin}
+Rmfskin1 3 0 {Rmfskin}
+Llfskin1 3 4 {Llfskin}
+Rlfskin1 4 0 {Rlfskin}
+
+V1 in 0 dc 0 ac 1 portnum 1 z0 50
+V2 in 0 dc 0 ac 0 portnum 2 z0 50
+
+.sp dec 51 100 6G
+
+.control
+run
+
+let Rbase=50
+settype impedance Rbase
+wrs2p C.s2p
+quit
+.endc
+
+.end

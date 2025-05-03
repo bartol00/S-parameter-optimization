@@ -1,0 +1,11 @@
+# Please put the specified data as values (it is not case sensitive)
+# Model: the kind of model the S param data references, it can be series or shunt
+# Ngspice: the ngspice bin directory, where ngspice.exe is located
+# Spath: the path to the S params to be analyzed
+# Circuit: the type of circuit to be analyzed, can be rlc or complex
+# Additional line comments can be added by putting '#' before a line
+
+Model=series
+Ngspice=C:/Users/barto/Downloads/Spice64/bin/
+Spath=C:/Users/barto/Desktop/rimac/GCM32EM8EA227ME08_DC0V_25degC_series.s2p
+Circuit=complex

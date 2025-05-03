@@ -1,0 +1,23 @@
+** Capacitor model
+
+.include param.txt
+
+C1 in 1 {C}
+L1 1 2 {L}
+R1 2 0 {R}
+
+V1 in 0 dc 0 ac 1 portnum 1 z0 50
+V2 in 0 dc 0 ac 0 portnum 2 z0 50
+
+.sp dec 51 100 6G
+
+.control
+run
+
+let Rbase=50
+settype impedance Rbase
+wrs2p C.s2p
+quit
+.endc
+
+.end
